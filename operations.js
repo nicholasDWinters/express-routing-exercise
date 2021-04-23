@@ -1,5 +1,5 @@
-function mean(str) {
-    const arr = str.split(',');
+function mean(arr) {
+
     let total = 0;
 
     for (let num of arr) {
@@ -13,8 +13,8 @@ function mean(str) {
 
 
 
-function median(str) {
-    const arr = str.split(',');
+function median(arr) {
+
     const nums = [];
     for (let num of arr) {
         nums.push(parseInt(num));
@@ -34,9 +34,9 @@ function median(str) {
 }
 
 
-function mode(str) {
+function mode(arr) {
     let mode = {}
-    const arr = str.split(',');
+
     let highCount = 0;
 
     for (let num of arr) {
@@ -53,7 +53,7 @@ function mode(str) {
         }
     }
 
-    return Object.keys(mode)[0]
+    return parseInt(Object.keys(mode)[0])
 
 }
 
